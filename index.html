@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>File Encryption/Decryption Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 File Encryption/Decryption Tool</h1>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="themeToggle" />
+      <span>🌗 Toggle Theme</span>
+    </label>
+
+    <input type="file" id="fileInput" accept=".txt,.json,.csv" />
+    <input type="password" id="password" placeholder="Enter password or shift key" />
+
+    <div class="buttons">
+      <button onclick="encryptFile()">Encrypt</button>
+      <button onclick="decryptFile()">Decrypt</button>
+      <button onclick="downloadFile()">Download Result</button>
+    </div>
+
+    <textarea id="output" placeholder="Encrypted/Decrypted content will appear here..." readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
